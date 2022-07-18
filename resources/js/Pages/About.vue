@@ -1,18 +1,15 @@
 <template>
-    <div class="px-8">
-        <Link :href="route('posts.index')">Posts</Link>
-        <Link :href="route('about')" class="ml-2">About</Link>
-
-        <h2>Cooming soon</h2>
-    </div>
+    <AppLayout>
+        <h2 class="mt-4 text-2xl">About us</h2>
+    </AppLayout>
 </template>
 
 <script>
-    import { Link } from "@inertiajs/inertia-vue3"
+    import AppLayout from "@/Layouts/App.vue"
 
     export default {
         components: {
-            Link
+            AppLayout
         }
     }
 </script>
