@@ -1,4 +1,5 @@
 <template>
+    <Head title="About Us" />
     <AppLayout>
         <h2 class="mt-4 text-2xl">About us</h2>
     </AppLayout>
