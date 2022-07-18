@@ -32,4 +32,5 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 
-Route::get('posts', [PostController::class, 'index']);
+Route::get('posts', [PostController::class, 'index'])->name('posts.index');
+Route::inertia('about', 'About')->name('about');

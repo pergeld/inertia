@@ -1,5 +1,9 @@
 <template>
     <div class="px-8">
+
+        <Link :href="route('posts.index')">Posts</Link>
+        <Link :href="route('about')" class="ml-2">About</Link>
+
         <div class="mt-8 flex flex-col">
             <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
@@ -30,7 +34,13 @@
 </template>
 
 <script>
+    import { Link } from "@inertiajs/inertia-vue3"
+
     export default {
+        components: {
+            Link
+        },
+
         props: {
             posts: Object
         }
